@@ -38,6 +38,7 @@ android {
 
 sonar {
     properties {
+        property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.projectKey", "SE-II-group-new_testing-app-2")
         property("sonar.organization", "se-ii-group-new")
     }
