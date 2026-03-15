@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("org.sonarqube") version "7.2.3.7755"
 }
 
 android {
@@ -32,6 +33,13 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "SE-II-group-new_testing-app-2")
+        property("sonar.organization", "se-ii-group-new")
     }
 }
 
